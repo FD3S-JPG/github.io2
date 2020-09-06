@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAZDA</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $("a").click(function(){
+       $(this).toggleClass("after");
+   });
+  });
+
+  $(function(){
+    $("#a1").click(function(){
+       $("#img1").toggleClass("imgafter");
+    });
+  });
+  $(function(){
+    $("#a2").click(function(){
+       $("#img2").toggleClass("imgafter");
+    });
+  });
+  $(function(){
+    $("#a3").click(function(){
+       $("#img3").toggleClass("imgafter");
+    });
+  });
+  $(function(){
+    $("#a4").click(function(){
+       $("#img4").toggleClass("imgafter");
+    });
+  });
+  </script>
+  </head>
+<body>
+  <div class="shutter"></div>
+  <div class="header">
+    <h1>MAZDA RX-<span>7</span></h1>
+  </div>
+  <div class="header-wrapper">
+    <div class="container">
+      <a href="#" class="history list" id="a1"><span>H</span>istory</a>
+      <img  src="css/img/history.JPG" alt="" id="img1">
+      <a href="#" class="engin list" id="a2"><span>E</span>ngin</a>
+      <img  src="css/img/engin.jpg" alt="" id="img2">
+      <a href="#" class="series list" id="a3"><span>S</span>eries</a>
+      <img  src="css/img/series.jpg" alt="" id="img3">
+      <a href="#" class="pictures list" id="a4"><span>P</span>ictuers</a>
+      <img  src="css/img/pictures.JPG" alt="" id="img4">
+    </div>
+  </div>
+</body>
+</html>
